@@ -9,11 +9,28 @@
 </head>
 <body>
     <div class="container">
+        <!-- Simplified Animated Header -->
         <header class="hero">
+            <!-- Stars Background -->
+            <div class="stars"></div>
+            
+            <!-- Running Ninja Characters
+            <div class="ninja ninja-1">
+                <div class="ninja-sprite ninja-running"></div>
+            </div> -->
+            <div class="ninja ninja-2">
+                <div class="ninja-sprite ninja-gliding"></div>
+            </div>
+            <div class="ninja ninja-3">
+                <div class="ninja-sprite ninja-gliding"></div>
+            </div>
+            
+            <!-- Hero Content -->
             <div class="hero-content">
                 <h1 class="name">Tushar Mishra</h1>
                 <p class="subtitle">ISB AMPBA Alum | AI,ML & SN Solution Architect | EY</p>
                 <div class="hero-links">
+                    <a href="#services" class="nav-link">Services</a>
                     <a href="#connect" class="nav-link">Connect</a>
                     <a href="#achievements" class="nav-link">Achievements</a>
                     <a href="#education" class="nav-link">Education</a>
@@ -23,6 +40,58 @@
         </header>
 
         <main>
+            <!-- Services & Contact Section -->
+            <section id="services" class="section services-contact-section">
+                <div class="services-contact-grid">
+                    <!-- Services Column -->
+                    <div class="services-column">
+                        <h2 class="section-title">Services I Offer</h2>
+                        <div class="services-list">
+                            <div class="service-item">
+                                <span class="service-name">n8n Workflow Automation Solutions</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-name">Custom AI Agent Development</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-name">ServiceNow Now Assist Implementation</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-name">AI/ML Strategy & Consulting</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-name">Enterprise System Integrations</span>
+                            </div>
+                            <div class="service-item">
+                                <span class="service-name">AI/Automation Training Programs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Column -->
+                    <div class="contact-column">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="contact-card">
+                            <p>Let's connect and discuss opportunities.</p>
+                            <div class="contact-methods">
+                                <a href="mailto:tushar.x.mishra@gmail.com" class="contact-btn">
+                                    <span>Email</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tusshar-mishra/" class="contact-btn" target="_blank">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/yvain13" class="contact-btn" target="_blank">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://huggingface.co/xeroISB" class="contact-btn" target="_blank">
+                                    <span>Hugging Face</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <section id="connect" class="section">
                 <h2 class="section-title">Connect & Resources</h2>
                 <div class="connect-grid">
@@ -123,31 +192,13 @@
                 </div>
             </section>
 
-            <section id="contact" class="section">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-card">
-                    <p>Let's connect and discuss opportunities or collaborations.</p>
-                    <div class="contact-methods">
-                        <a href="mailto:tushar.x.mishra@gmail.com" class="contact-btn">
-                            <span>Email</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tusshar-mishra/" class="contact-btn" target="_blank">
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/yvain13" class="contact-btn" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://huggingface.co/xeroISB" class="contact-btn" target="_blank">
-                            <span>Hugging Face</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
+
         </main>
 
         <footer>
             <p>&copy; 2024 Tushar Mishra. Crafted with minimalism in mind.</p>
         </footer>
     </div>
+    <script src="ninja-animation.js"></script>
 </body>
 </html>

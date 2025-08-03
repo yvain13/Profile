@@ -35,29 +35,168 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0a0f1c 0%, #1a1f2e 50%, #16213e 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    position: relative;
 }
 
-.hero::before {
-    content: '';
+/* Stars */
+.stars {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
-    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+        radial-gradient(1px 1px at 40px 70px, #fff, transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+        radial-gradient(1px 1px at 160px 30px, #fff, transparent),
+        radial-gradient(1px 1px at 200px 50px, #fff, transparent),
+        radial-gradient(1px 1px at 250px 20px, #fff, transparent),
+        radial-gradient(1px 1px at 300px 90px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 350px 120px;
+    animation: twinkle 3s ease-in-out infinite alternate;
+    z-index: 1;
 }
 
+@keyframes twinkle {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* Ninja Characters */
+.ninja {
+    position: absolute;
+    z-index: 15;
+    width: 30px;
+    height: 30px;
+}
+
+.ninja-sprite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Running Ninja Animation */
+.ninja-running {
+    background-image: url('assets/ninja/Run__000.png');
+    animation: runSpriteSmooth 1.5ms linear infinite;
+}
+
+/* Gliding Ninja Animation */
+.ninja-gliding {
+    background-image: url('assets/ninja/Glide_000.png');
+    animation: glideSpriteSmooth linear infinite;
+}
+
+/* Smooth Sprite Animation Keyframes */
+@keyframes runSpriteSmooth {
+    0% { background-image: url('assets/ninja/Run__000.png'); }
+    8% { background-image: url('assets/ninja/Run__000.png'); }
+    10% { background-image: url('assets/ninja/Run__001.png'); }
+    18% { background-image: url('assets/ninja/Run__001.png'); }
+    20% { background-image: url('assets/ninja/Run__002.png'); }
+    28% { background-image: url('assets/ninja/Run__002.png'); }
+    30% { background-image: url('assets/ninja/Run__003.png'); }
+    38% { background-image: url('assets/ninja/Run__003.png'); }
+    40% { background-image: url('assets/ninja/Run__004.png'); }
+    48% { background-image: url('assets/ninja/Run__004.png'); }
+    50% { background-image: url('assets/ninja/Run__005.png'); }
+    58% { background-image: url('assets/ninja/Run__005.png'); }
+    60% { background-image: url('assets/ninja/Run__006.png'); }
+    68% { background-image: url('assets/ninja/Run__006.png'); }
+    70% { background-image: url('assets/ninja/Run__007.png'); }
+    78% { background-image: url('assets/ninja/Run__007.png'); }
+    80% { background-image: url('assets/ninja/Run__008.png'); }
+    88% { background-image: url('assets/ninja/Run__008.png'); }
+    90% { background-image: url('assets/ninja/Run__009.png'); }
+    98% { background-image: url('assets/ninja/Run__009.png'); }
+    100% { background-image: url('assets/ninja/Run__000.png'); }
+}
+
+@keyframes glideSpriteSmooth {
+    0% { background-image: url('assets/ninja/Glide_000.png'); }
+    8% { background-image: url('assets/ninja/Glide_000.png'); }
+    10% { background-image: url('assets/ninja/Glide_001.png'); }
+    18% { background-image: url('assets/ninja/Glide_001.png'); }
+    20% { background-image: url('assets/ninja/Glide_002.png'); }
+    28% { background-image: url('assets/ninja/Glide_002.png'); }
+    30% { background-image: url('assets/ninja/Glide_003.png'); }
+    38% { background-image: url('assets/ninja/Glide_003.png'); }
+    40% { background-image: url('assets/ninja/Glide_004.png'); }
+    48% { background-image: url('assets/ninja/Glide_004.png'); }
+    50% { background-image: url('assets/ninja/Glide_005.png'); }
+    58% { background-image: url('assets/ninja/Glide_005.png'); }
+    60% { background-image: url('assets/ninja/Glide_006.png'); }
+    68% { background-image: url('assets/ninja/Glide_006.png'); }
+    70% { background-image: url('assets/ninja/Glide_007.png'); }
+    78% { background-image: url('assets/ninja/Glide_007.png'); }
+    80% { background-image: url('assets/ninja/Glide_008.png'); }
+    88% { background-image: url('assets/ninja/Glide_008.png'); }
+    90% { background-image: url('assets/ninja/Glide_009.png'); }
+    98% { background-image: url('assets/ninja/Glide_009.png'); }
+    100% { background-image: url('assets/ninja/Glide_000.png'); }
+}
+
+/* Ninja Positioning and Simple Movement */
+.ninja-1 {
+    top: 50%;
+    left: -30px;
+    animation: runAcross 8s linear infinite;
+}
+
+.ninja-2 {
+    top: 10%;
+    right: 10%;
+    animation: glideInCorner 6s ease-in-out infinite;
+}
+
+.ninja-3 {
+    top: 10%;
+    left: 10%;
+    animation: glideInCornerLeft 6s ease-in-out infinite 2s;
+}
+
+/* Simple Running Animation - Above Name */
+@keyframes runAcross {
+    0% { left: -30px; }
+    100% { left: calc(100% + 30px); }
+}
+
+/* Simple Gliding Animation - Right Corner */
+@keyframes glideInCorner {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(-10px); }
+}
+
+/* Simple Gliding Animation - Left Corner */
+@keyframes glideInCornerLeft {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(10px); }
+}
+
+/* Hero Content */
 .hero-content {
-    z-index: 1;
+    z-index: 10;
     position: relative;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(10, 15, 28, 0.8);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .name {
@@ -223,6 +362,104 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Services & Contact Section */
+.services-contact-section {
+    padding: 3rem 0;
+    background: var(--secondary-bg);
+    min-height: 60vh;
+}
+
+.services-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Services Column */
+.services-column {
+    padding: 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(30, 58, 138, 0.2);
+}
+
+.service-icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+
+.service-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+/* Contact Column */
+.contact-column {
+    padding: 2rem;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-btn {
+    display: block;
+    padding: 0.75rem 1rem;
+    background: var(--gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(30, 58, 138, 0.3);
+}
+
 /* Link buttons styling */
 .link-buttons {
     display: flex;
@@ -320,6 +557,68 @@ footer p {
     
     .connect-grid, .achievements-grid, .education-grid, .certifications-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Hero Mobile Adjustments */
+    .hero-content {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .ninja {
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* Services & Contact Mobile */
+    .services-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .services-column,
+    .contact-column {
+        padding: 1rem;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-content {
+        padding: 1rem;
+    }
+    
+    .ninja {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .services-contact-grid {
+        gap: 1.5rem;
+    }
+    
+    .service-item {
+        padding: 0.75rem;
+    }
+    
+    .service-name {
+        font-size: 0.85rem;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
     }
 }
 
