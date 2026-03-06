@@ -3,202 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tushar Mishra - Portfolio</title>
+    <title>Tushar Mishra — AI & ML Solution Architect</title>
+    <meta name="description" content="ServiceNow MVP 2026 · AI, ML & ServiceNow Solution Architect at EY · ISB AMPBA Alum · Founder of ReAcademy.ai">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Simplified Animated Header -->
-        <header class="hero">
-            <!-- Stars Background -->
-            <div class="stars"></div>
-            
-            <!-- Running Ninja Characters
-            <div class="ninja ninja-1">
-                <div class="ninja-sprite ninja-running"></div>
-            </div> -->
-            <div class="ninja ninja-2">
-                <div class="ninja-sprite ninja-gliding"></div>
+
+    <!-- ─── STICKY NAV ───────────────────────────────────── -->
+    <nav class="topnav" id="topnav">
+        <div class="topnav-inner">
+            <a href="#hero" class="topnav-logo">TM</a>
+            <div class="topnav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#articles">Articles</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#education">Education</a>
+                <a href="#connect">Connect</a>
             </div>
-            <div class="ninja ninja-3">
-                <div class="ninja-sprite ninja-gliding"></div>
-            </div>
-            
-            <!-- Hero Content -->
-            <div class="hero-content">
-                <h1 class="name">Tushar Mishra</h1>
-                <p class="subtitle">ISB AMPBA Alum | AI,ML & SN Solution Architect | EY</p>
-                <div class="hero-links">
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#connect" class="nav-link">Connect</a>
-                    <a href="#achievements" class="nav-link">Achievements</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─────────────────────────────────────────── -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+
+            <!-- Left: text -->
+            <div class="hero-text">
+                <p class="hero-greeting">Hey, I'm</p>
+                <h1 class="hero-name">Tushar<br>Mishra</h1>
+                <p class="hero-tagline">
+                    AI &amp; ML Solution Architect at <strong>EY</strong><br>
+                    ISB AMPBA Alum &nbsp;·&nbsp; Co-Founder of <a href="https://reacademy.ai" target="_blank" rel="noopener" class="inline-link">ReAcademy.ai</a>
+                </p>
+                <p class="hero-passion">
+                    <span class="tag">🏆 ServiceNow MVP 2026</span>
+                    <span class="tag">Agentic AI</span>
+                    <span class="tag">LLM Fine-tuning</span>
+                    <span class="tag">n8n Automation</span>
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="cta-primary">View Projects</a>
+                    <a href="https://www.youtube.com/@AIbyTusharM" target="_blank" rel="noopener" class="cta-secondary">▶ YouTube</a>
+                    <a href="resume.pdf" class="cta-secondary" download>Resume ↓</a>
                 </div>
             </div>
-        </header>
 
-        <main>
-            <!-- Services & Contact Section -->
-            <section id="services" class="section services-contact-section">
-                <div class="services-contact-grid">
-                    <!-- Services Column -->
-                    <div class="services-column">
-                        <h2 class="section-title">Services I Offer</h2>
-                        <div class="services-list">
-                            <div class="service-item">
-                                <span class="service-name">n8n Workflow Automation Solutions</span>
-                            </div>
-                            <div class="service-item">
-                                <span class="service-name">Custom AI Agent Development</span>
-                            </div>
-                            <div class="service-item">
-                                <span class="service-name">ServiceNow Now Assist Implementation</span>
-                            </div>
-                            <div class="service-item">
-                                <span class="service-name">AI/ML Strategy & Consulting</span>
-                            </div>
-                            <div class="service-item">
-                                <span class="service-name">Enterprise System Integrations</span>
-                            </div>
-                            <div class="service-item">
-                                <span class="service-name">AI/Automation Training Programs</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Contact Column -->
-                    <div class="contact-column">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <div class="contact-card">
-                            <p>Let's connect and discuss opportunities.</p>
-                            <div class="contact-methods">
-                                <a href="mailto:tushar.x.mishra@gmail.com" class="contact-btn">
-                                    <span>Email</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/tusshar-mishra/" class="contact-btn" target="_blank">
-                                    <span>LinkedIn</span>
-                                </a>
-                                <a href="https://github.com/yvain13" class="contact-btn" target="_blank">
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="https://huggingface.co/xeroISB" class="contact-btn" target="_blank">
-                                    <span>Hugging Face</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Right: images -->
+            <div class="hero-images">
+                <div class="hero-img-wrap hero-img-main">
+                    <img src="personalImage.jpg" alt="Tushar Mishra" class="profile-photo">
                 </div>
-            </section>
-            
-            <section id="connect" class="section">
-                <h2 class="section-title">Connect & Resources</h2>
-                <div class="connect-grid">
-                    <div class="card">
-                        <h3>Professional Links</h3>
-                        <div class="link-buttons">
-                            <a href="https://www.linkedin.com/in/tusshar-mishra/" class="btn" target="_blank">LinkedIn</a>
-                            <a href="https://github.com/yvain13" class="btn" target="_blank">GitHub</a>
-                            <a href="https://huggingface.co/xeroISB" class="btn" target="_blank">Hugging Face</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Content & Projects</h3>
-                        <div class="link-buttons">
-                            <a href="https://www.youtube.com/@Reacademyai" class="btn" target="_blank">YouTube</a>
-                            <a href="https://reacademy.ai" class="btn" target="_blank">ReAcademy.ai</a>
-                            <a href="resume.pdf" class="btn" download>Resume PDF</a>
-                        </div>
-                    </div>
+                <div class="hero-img-wrap hero-img-comic">
+                    <img src="comicImage.png" alt="Tushar — Comic version" class="comic-photo">
                 </div>
-            </section>
+            </div>
 
-            <section id="achievements" class="section">
-                <h2 class="section-title">Key Achievements</h2>
-                <div class="achievements-grid">
-                    <div class="card achievement">
-                        <h3>Generative AI Pioneer</h3>
-                        <p>Integrated OpenAI and open-source LLMs into ServiceNow—delivering Risk Sensing, Multi-Document RAG, multilingual sentiment analysis, and agentic AI healthcare workflows</p>
-                    </div>
-                    <div class="card achievement">
-                        <h3>Fine-Tuned HR Innovation</h3>
-                        <p>Fine-tuned LLMs for HR-specific queries and deployed enterprise chatbot within ServiceNow, enabling streamlined employee support across multiple SaaS platforms</p>
-                    </div>
-                    <div class="card achievement">
-                        <h3>SAP-ServiceNow Integration</h3>
-                        <p>Led end-to-end integrations of SAP HR via API Manager, SAP PO, plus SAP HANA and Ariba with ServiceNow PSM—enhancing cross-platform automation</p>
-                    </div>
-                    <div class="card achievement">
-                        <h3>Leadership Excellence</h3>
-                        <p>Led team of 10 and managed 20 direct reports as Senior Technical Consultant, demonstrating strong team-building and project leadership capabilities</p>
-                    </div>
-                    <div class="card achievement">
-                        <h3>AI Hackathon Champion</h3>
-                        <p>Twice won ServiceNow × EY Gen AI hackathons, showcasing HR chatbot, employee portal experience, and innovative agentic AI healthcare workflow solutions</p>
-                    </div>
-                    <div class="card achievement">
-                        <h3>Entrepreneurial Impact</h3>
-                        <p>Founded ReAcademy.ai—democratizing AI through accessible generative AI use case implementations and expert guidance for enterprise adoption</p>
-                    </div>
-                </div>
-            </section>
+        </div>
+    </section>
 
-            <section id="education" class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="education-grid">
-                    <div class="card education">
-                        <h3>Executive Master's Program</h3>
-                        <h4>Advanced Management Program in Business Analytics</h4>
-                        <p>Indian School of Business (ISB) • 2022-2024</p>
-                        <p>Capstone: Liver tumor detection & segmentation with novel 3D visualization algorithm for PET scans</p>
-                    </div>
-                    <div class="card education">
-                        <h3>Bachelor of Technology</h3>
-                        <h4>Computer Science Engineering</h4>
-                        <p>Dr. A.P.J. Abdul Kalam Technical University • 2011-2015</p>
-                        <p>Specialized in AI/ML, developed university campus management system and course recommendation engine</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="certifications" class="section">
-                <h2 class="section-title">Certifications</h2>
-                <div class="certifications-grid">
-                    <div class="card cert">
-                        <h3>ServiceNow CIS & CAD</h3>
-                        <p>CIS ITSM, HRSD, Discovery, CSA, CAD</p>
-                    </div>
-                    <div class="card cert">
-                        <h3>Microsoft Azure AI900</h3>
-                        <p>Azure AI Fundamentals</p>
-                    </div>
-                    <div class="card cert">
-                        <h3>Google Cloud ML</h3>
-                        <p>Managing Machine Learning Projects</p>
-                    </div>
-                    <div class="card cert">
-                        <h3>DeepLearning.AI</h3>
-                        <p>LLM & Generative AI Courses</p>
-                    </div>
-                    <div class="card cert">
-                        <h3>Duke University MLOps</h3>
-                        <p>DevOps, DataOps, MLOps</p>
-                    </div>
-                    <div class="card cert">
-                        <h3>ISB AMPBA</h3>
-                        <p>Advanced Management Program in Business Analytics</p>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
-
-        <footer>
-            <p>&copy; 2024 Tushar Mishra. Crafted with minimalism in mind.</p>
-        </footer>
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--secondary-bg)"/>
+        </svg>
     </div>
+
+    <!-- ─── ABOUT ──────────────────────────────────────────── -->
+    <section id="about" class="section section-alt">
+        <div class="section-inner">
+            <h2 class="section-label">About</h2>
+            <div class="about-grid reveal">
+                <div class="about-bio">
+                    <p>
+                        I'm an AI & ML Solution Architect at <strong>EY</strong> specialising in AI, Machine Learning, and ServiceNow platform engineering. With 10+ years in enterprise tech, I bridge the gap between cutting-edge AI research and real-world business value.
+                    </p>
+                    <p>
+                        Named a <strong>ServiceNow MVP 2026</strong>, I've led teams of 20+, won multiple Gen AI hackathons, and built systems that serve thousands of enterprise users. I also create content on my <a href="https://www.youtube.com/@AIbyTusharM" target="_blank" rel="noopener" class="inline-link">YouTube channel</a> and run <a href="https://reacademy.ai" target="_blank" rel="noopener" class="inline-link">ReAcademy.ai</a> — democratising AI education for the enterprise world.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Years in Enterprise Tech</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">MVP</span>
+                        <span class="stat-label">ServiceNow 2026</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">2×</span>
+                        <span class="stat-label">Gen AI Hackathon Winner</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">7+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,0 1080,80 1440,40 L1440,80 L0,80 Z" fill="var(--primary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── SERVICES ───────────────────────────────────────── -->
+    <section id="services" class="section">
+        <div class="section-inner">
+            <h2 class="section-label">Services</h2>
+            <p class="section-sub">What I can help you build</p>
+            <div class="services-grid reveal-stagger">
+                <div class="service-card">
+                    <span class="service-icon">⚡</span>
+                    <h3>n8n Workflow Automation</h3>
+                    <p>End-to-end workflow automation solutions using n8n for enterprise-grade integrations.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🤖</span>
+                    <h3>Custom AI Agent Development</h3>
+                    <p>Agentic AI systems with multi-agent orchestration, tool-use, and memory management.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏢</span>
+                    <h3>ServiceNow Now Assist</h3>
+                    <p>Generative AI implementation within ServiceNow — NowAssist, RAG, and LLM integrations.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🧠</span>
+                    <h3>AI / ML Strategy</h3>
+                    <p>Strategic consulting on AI adoption, LLM selection, fine-tuning, and deployment roadmaps.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔗</span>
+                    <h3>Enterprise Integrations</h3>
+                    <p>ServiceNow, API Manager, and cloud integrations — robust, scalable cross-platform automation.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🎓</span>
+                    <h3>AI / Automation Training</h3>
+                    <p>Hands-on training programs for teams stepping into Generative AI and automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,20 C480,80 960,0 1440,60 L1440,80 L0,80 Z" fill="var(--secondary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── PROJECTS ───────────────────────────────────────── -->
+    <section id="projects" class="section section-alt">
+        <div class="section-inner">
+            <h2 class="section-label">Projects</h2>
+            <p class="section-sub">Open-source tools and demos I've built</p>
+
+            <div class="projects-grid reveal-stagger">
+
+                <!-- Project 1: ServiceNow MCP -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="https://img.youtube.com/vi/irP6hd_uW88/maxresdefault.jpg"
+                             alt="ServiceNow Scripts MCP" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-thumb-fallback" style="display:none;">
+                            <span>🔧</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags-row">
+                            <span class="project-tag">ServiceNow</span>
+                            <span class="project-tag">MCP</span>
+                            <span class="project-tag">AI</span>
+                        </div>
+                        <h3 class="project-title">ServiceNow Scripts MCP</h3>
+                        <p class="project-desc">Model Context Protocol server for ServiceNow — lets AI assistants directly query, run, and manage ServiceNow scripts and configurations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yvain13/ServiceNow-Scripts-MCP" target="_blank" rel="noopener" class="project-link-btn">GitHub ↗</a>
+                            <a href="https://www.youtube.com/watch?v=irP6hd_uW88" target="_blank" rel="noopener" class="project-link-btn project-link-secondary">▶ Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: OpenWebUI SN Connectors -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="https://img.youtube.com/vi/Uhoz5d4dJEs/maxresdefault.jpg"
+                             alt="OpenWebUI ServiceNow Connectors" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-thumb-fallback" style="display:none;">
+                            <span>🔌</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags-row">
+                            <span class="project-tag">OpenWebUI</span>
+                            <span class="project-tag">ServiceNow</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <h3 class="project-title">OpenWebUI–ServiceNow Connectors</h3>
+                        <p class="project-desc">Comprehensive ServiceNow connector for OpenWebUI — tools for incident, change, CMDB, HRSD, and Risk management with analysis and visualisation.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yvain13/OpenWebUI-SN-Connectors" target="_blank" rel="noopener" class="project-link-btn">GitHub ↗</a>
+                            <a href="https://www.youtube.com/watch?v=Uhoz5d4dJEs" target="_blank" rel="noopener" class="project-link-btn project-link-secondary">▶ Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Kuchi Robot -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <img src="https://img.youtube.com/vi/4S0K4c5pU78/maxresdefault.jpg"
+                             alt="Kuchi Robot" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-thumb-fallback" style="display:none;">
+                            <span>🤖</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags-row">
+                            <span class="project-tag">Robotics</span>
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <h3 class="project-title">Kuchi Robot</h3>
+                        <p class="project-desc">An AI-powered robot project exploring autonomous behaviour, decision-making, and real-world interaction with modern ML techniques.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/yvain13/kuchi-robot" target="_blank" rel="noopener" class="project-link-btn">GitHub ↗</a>
+                            <a href="https://www.youtube.com/watch?v=4S0K4c5pU78" target="_blank" rel="noopener" class="project-link-btn project-link-secondary">▶ Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-cta">
+                <a href="https://github.com/yvain13?tab=repositories" target="_blank" rel="noopener" class="cta-outline">
+                    View all projects on GitHub ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C480,0 960,80 1440,20 L1440,80 L0,80 Z" fill="var(--primary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── ARTICLES ───────────────────────────────────────── -->
+    <section id="articles" class="section">
+        <div class="section-inner">
+            <h2 class="section-label">Articles</h2>
+            <p class="section-sub">Insights on AI, ML, and enterprise automation — published on LinkedIn</p>
+
+            <div class="articles-grid reveal-stagger">
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/illusion-thinking-llms-tushar-mishra-7j0se/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQHUKS9IQ6DfKw/article-cover_image-shrink_720_1280/B4EZdUtlrkHgAI-/0/1749472928862?e=2147483647&v=beta&t=1l2GjXKjVMnK2AS_YgwRsLjL2mwGVqiEhpv6kSz_MI8" alt="Illusion of Thinking in LLMs" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">LLM · Reasoning</span>
+                        <h3 class="article-title">Illusion of Thinking in LLMs</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/orchestrator-brain-agentic-workflows-tushar-mishra-e41pe/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQH1Sf2v2gLOxQ/article-cover_image-shrink_720_1280/B4EZUEoMGfG0AI-/0/1739539405805?e=2147483647&v=beta&t=Qb4kbV8DDe6Ga_o6aDTPZ5vQ4SBuviho_yctd9P89xA" alt="Orchestrator: The Brain of Agentic Workflows" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">Agentic AI · Orchestration</span>
+                        <h3 class="article-title">Orchestrator: The Brain of Agentic Workflows</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/generative-ai-bubble-tushar-mishra-wxr9e/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQEfQ-e-vxeMjA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725952638349?e=2147483647&v=beta&t=KDdHkh35TRQS9I7LvuZR5mTPyUlDe28FhHDDLYWaauI" alt="Is Generative AI a Bubble?" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">Generative AI · Industry</span>
+                        <h3 class="article-title">Is Generative AI a Bubble?</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/step-by-step-guide-connecting-your-docker-based-llms-enhanced-mishra-crnwe/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQHNfolLNcvSMg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1724561592046?e=2147483647&v=beta&t=SAEqx-VTdyi9KCmBcvK3eUOFV5KxIur7Bqgg8fI1Zyc" alt="Connecting Docker-Based LLMs with ServiceNow" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">ServiceNow · Docker</span>
+                        <h3 class="article-title">Connecting Docker-Based LLMs with ServiceNow</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/mastering-llm-accuracy-servicenow-applications-prompt-tushar-mishra-yz0le/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQGc7ddVKguOFQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1723970193574?e=2147483647&v=beta&t=DHKWnScSs6R_6u5Bp0fExzpTsifWvZ_8aFtyUP3gS5g" alt="Mastering LLM Accuracy with Prompt Engineering" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">LLM · Prompt Engineering</span>
+                        <h3 class="article-title">Mastering LLM Accuracy with Prompt Engineering</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+                <a class="article-card" href="https://www.linkedin.com/pulse/why-artificial-general-intelligence-consciousness-tushar-mishra-sgl9e/" target="_blank" rel="noopener">
+                    <div class="article-thumb">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQFe_scS_izcRg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1722050692761?e=2147483647&v=beta&t=hT61h303VgTxOc_e5nq6LGEfoyKLOnljXCg280U_Np0" alt="Why AGI and Not Artificial Consciousness" loading="lazy">
+                    </div>
+                    <div class="article-body">
+                        <span class="article-tag">AGI · Philosophy</span>
+                        <h3 class="article-title">Why AGI and Not Artificial Consciousness</h3>
+                        <span class="article-meta">Read on LinkedIn ↗</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="section-cta">
+                <a href="https://www.linkedin.com/in/tusshar-mishra/recent-activity/articles/" target="_blank" rel="noopener" class="cta-outline">
+                    View all articles on LinkedIn ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--secondary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── ACHIEVEMENTS ───────────────────────────────────── -->
+    <section id="achievements" class="section section-alt">
+        <div class="section-inner">
+            <h2 class="section-label">Achievements</h2>
+            <p class="section-sub">Recognition and milestones that define my journey</p>
+            <div class="achievements-grid reveal-stagger">
+
+                <!-- MVP — highlighted card -->
+                <div class="achievement-card achievement-featured">
+                    <span class="achievement-icon">🏆</span>
+                    <h3>ServiceNow MVP 2026</h3>
+                    <p>Named a <strong>ServiceNow Most Valuable Professional (MVP) 2026</strong> — one of a select group recognised globally for exceptional contributions to the ServiceNow community, ecosystem, and platform innovation.</p>
+                    <a href="https://www.servicenow.com/community/in-other-news/announcing-our-2026-servicenow-mvps/ba-p/3493833" target="_blank" rel="noopener" class="achievement-link">View announcement ↗</a>
+                </div>
+
+                <div class="achievement-card">
+                    <span class="achievement-icon">⚡</span>
+                    <h3>Certified n8n Creator</h3>
+                    <p>Officially recognised as a certified n8n creator — building and publishing automation workflows used by the global n8n community.</p>
+                    <a href="https://n8n.io/creators/yajna/" target="_blank" rel="noopener" class="achievement-link">View profile ↗</a>
+                </div>
+
+                <div class="achievement-card">
+                    <span class="achievement-icon">🥇</span>
+                    <h3>2× Gen AI Hackathon Winner</h3>
+                    <p>Won ServiceNow × EY Generative AI hackathons twice — showcasing HR chatbot, employee portal experience, and agentic AI healthcare workflow solutions.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <span class="achievement-icon">🌱</span>
+                    <h3>Founder — ReAcademy.ai</h3>
+                    <p>Founded ReAcademy.ai to democratise AI — delivering accessible generative AI use-case implementations and expert guidance for enterprise adoption.</p>
+                    <a href="https://reacademy.ai" target="_blank" rel="noopener" class="achievement-link">Visit ReAcademy.ai ↗</a>
+                </div>
+
+                <div class="achievement-card">
+                    <span class="achievement-icon">🚀</span>
+                    <h3>Generative AI Pioneer</h3>
+                    <p>Integrated OpenAI and open-source LLMs into ServiceNow — delivering Risk Sensing, Multi-Document RAG, multilingual sentiment analysis, and agentic AI workflows.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <span class="achievement-icon">💼</span>
+                    <h3>Fine-Tuned HR Innovation</h3>
+                    <p>Fine-tuned LLMs for HR-specific queries and deployed an enterprise chatbot within ServiceNow, enabling streamlined employee support across multiple SaaS platforms.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,20 C480,80 960,0 1440,60 L1440,80 L0,80 Z" fill="var(--primary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── EDUCATION & CERTIFICATIONS ────────────────────── -->
+    <section id="education" class="section">
+        <div class="section-inner">
+            <h2 class="section-label">Education</h2>
+            <p class="section-sub">Academic foundations</p>
+            <div class="education-grid reveal-stagger">
+                <div class="edu-card">
+                    <div class="edu-year">2022 – 2024</div>
+                    <h3>Executive Master's — AMPBA</h3>
+                    <p class="edu-school">Indian School of Business (ISB)</p>
+                    <p>Advanced Management Program in Business Analytics. Capstone: Liver tumor detection &amp; segmentation with novel 3D visualisation algorithm for PET scans.</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2011 – 2015</div>
+                    <h3>B.Tech — Computer Science</h3>
+                    <p class="edu-school">Dr. A.P.J. Abdul Kalam Technical University</p>
+                    <p>Specialised in AI / ML. Developed university campus management system and course recommendation engine.</p>
+                </div>
+            </div>
+
+            <h2 class="section-label" style="margin-top: 4rem;">Certifications</h2>
+            <p class="section-sub">Professional credentials</p>
+            <div class="certs-grid reveal">
+                <div class="cert-pill cert-pill-featured">🏆 ServiceNow MVP 2026</div>
+                <div class="cert-pill">Architecture Excellence</div>
+                <div class="cert-pill">ServiceNow CIS ITSM &amp; HRSD</div>
+                <div class="cert-pill">ServiceNow CSA &amp; CAD</div>
+                <div class="cert-pill">Microsoft Azure AI-900</div>
+                <div class="cert-pill">Google Cloud ML</div>
+                <div class="cert-pill">DeepLearning.AI — LLM &amp; GenAI</div>
+                <div class="cert-pill">Duke University MLOps</div>
+                <div class="cert-pill">ISB AMPBA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- wave divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,0 1080,80 1440,40 L1440,80 L0,80 Z" fill="var(--secondary-bg)"/>
+        </svg>
+    </div>
+
+    <!-- ─── CONNECT ────────────────────────────────────────── -->
+    <section id="connect" class="section section-alt">
+        <div class="section-inner connect-inner">
+            <h2 class="section-label">Let's Connect</h2>
+            <p class="section-sub connect-sub">Open for consulting, collaborations, and conversations about AI</p>
+            <div class="connect-links reveal">
+                <a href="mailto:tushar.x.mishra@gmail.com" class="connect-chip">✉️ Email</a>
+                <a href="https://www.linkedin.com/in/tusshar-mishra/" target="_blank" rel="noopener" class="connect-chip">💼 LinkedIn</a>
+                <a href="https://github.com/yvain13" target="_blank" rel="noopener" class="connect-chip">🐙 GitHub</a>
+                <a href="https://www.youtube.com/@AIbyTusharM" target="_blank" rel="noopener" class="connect-chip">▶️ YouTube</a>
+                <a href="https://huggingface.co/xeroISB" target="_blank" rel="noopener" class="connect-chip">🤗 Hugging Face</a>
+                <a href="https://reacademy.ai" target="_blank" rel="noopener" class="connect-chip">🌐 ReAcademy.ai</a>
+                <a href="https://n8n.io/creators/yajna/" target="_blank" rel="noopener" class="connect-chip">⚡ n8n Creator</a>
+                <a href="resume.pdf" download class="connect-chip">📄 Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─────────────────────────────────────────── -->
+    <footer class="footer">
+        <p>&copy; 2025 Tushar Mishra &nbsp;·&nbsp; ServiceNow MVP 2026 &nbsp;·&nbsp; Built with minimalism in mind.</p>
+    </footer>
+
     <script src="ninja-animation.js"></script>
 </body>
 </html>
