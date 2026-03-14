@@ -10,6 +10,36 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, { passive: true });
 
+    /* ── Hamburger menu toggle ───────────────────────────────── */
+    const hamburger = document.getElementById('hamburger');
+    const topnavLinks = document.getElementById('topnav-links');
+
+    if (hamburger && topnavLinks) {
+        hamburger.addEventListener('click', function () {
+            const isOpen = topnavLinks.classList.toggle('open');
+            hamburger.classList.toggle('open', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        // Close menu when any nav link is clicked
+        topnavLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                topnavLinks.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!topnavLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                topnavLinks.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
     /* ── Smooth scroll for all internal anchor links ─────────── */
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', function (e) {
